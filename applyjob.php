@@ -1,5 +1,12 @@
 
 <?php
+
+ob_end_clean();
+header('HTTP/1.0 404 Not Found');
+exit;
+
+
+
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
