@@ -24,48 +24,48 @@ if ($_POST['sub']):
     } else {
         try {
             $body = "
-						<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
-						عرض سعر
-						</h1>
-						<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
-						             <tr>
-						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>رقم الفاتورة</td>
-						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Bill </td>
-						    </tr>             <tr>
-						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>اسم المكتب/الشركة</td>
-						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Office </td>
-						    </tr>             <tr>
-						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>رقم السجل التجاري</td>
-						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Registry </td>
-						    </tr>             <tr>
-						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>اسم المسؤول</td>
-						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Administrator</td>
-						    </tr>
-						    <tr>
-						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>الجوال</td>
-						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$mobile </td>
-						    </tr>
-						        <tr>
-						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>التاريخ</td>
-						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Date </td>
-						    </tr>
-						        <tr>
-						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> مدينة مقر المكتب/الشركة</td>
-						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Company </td>
-						    </tr>
+							<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
+							عرض سعر
+							</h1>
+							<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
+							             <tr>
+							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>رقم الفاتورة</td>
+							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Bill </td>
+							    </tr>             <tr>
+							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>اسم المكتب/الشركة</td>
+							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Office </td>
+							    </tr>             <tr>
+							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>رقم السجل التجاري</td>
+							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Registry </td>
+							    </tr>             <tr>
+							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>اسم المسؤول</td>
+							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Administrator</td>
+							    </tr>
+							    <tr>
+							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>الجوال</td>
+							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$mobile </td>
+							    </tr>
+							        <tr>
+							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>التاريخ</td>
+							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Date </td>
+							    </tr>
+							        <tr>
+							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> مدينة مقر المكتب/الشركة</td>
+							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Company </td>
+							    </tr>
 
-						    <tr>
-						    <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>عرض السعر</td>
-						    <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$price </td>
-						        </tr>
-						        <tr>
-						        <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>السعر يشتمل على الأعمال التالية</td>
-						        <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Includes </td>
-						            </tr>
+							    <tr>
+							    <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>عرض السعر</td>
+							    <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$price </td>
+							        </tr>
+							        <tr>
+							        <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>السعر يشتمل على الأعمال التالية</td>
+							        <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Includes </td>
+							            </tr>
 
 
 
-						    </table>";
+							    </table>";
             $to = "villtydesign@villtydesign.com";
             $mail->SMTPDebug = 0;
             $mail->isSMTP();
@@ -164,14 +164,19 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     <option>مبرمج</option>
     <option>مسوق</option>
     <option>مصمم</option>
-    <option>- مستشار ( مجال الادارة . التقنية ، تطوير الاعمال؛
-</option>
+<option>مستشار ( مجال الادارة . التقنية ، تطوير الاعمال</option>
 <option>اخرى</option>
 
   </select>
         </div>
     </div>
 
+    <div class="form-group password-field">
+        <div class="input-group">
+    <input required  class="form-control" name="Office" type="file"
+    placeholder="حمل السيرة الذاتية">
+        </div>
+    </div>
 
     </div>
     </br>
