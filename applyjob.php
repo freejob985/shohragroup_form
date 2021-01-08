@@ -141,37 +141,22 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     <div class="form-group">
         <div class="input-group">
     <input   class="form-control" name="Bill" type="text"
-    placeholder="رقم الفاتورة">
+    placeholder="الاسم">
         </div>
     </div>
     <div class="form-group password-field">
         <div class="input-group">
-    <input required  class="form-control" name="Office" type="text"
-    placeholder=" اسم المكتب/الشركة">
+    <input required  class="form-control" name="Office" type="number"
+    placeholder="رقم الجوال">
         </div>
     </div>
+
+
+
 <div class="form-group password-field">
         <div class="input-group">
-    <input required  class="form-control" name="Registry" type="text"
-    placeholder=" رقم السجل التجاري">
-        </div>
-    </div>
-<div class="form-group password-field">
-        <div class="input-group">
-    <input required  class="form-control" name="Administrator" type="text"
-    placeholder=" اسم المسؤول">
-        </div>
-    </div>
-<div class="form-group password-field">
-        <div class="input-group">
-    <input required  class="form-control" name="mobile" type="number"
-    placeholder=" الجوال">
-        </div>
-    </div>
-<div class="form-group password-field">
-        <div class="input-group">
-    <input required  class="form-control" name="Date" type="date"
-    placeholder=" التاريخ">
+    <input required  class="form-control" name="e" type="email"
+    placeholder=" البريد الالكتروني">
         </div>
     </div>
 	<div class="form-group password-field">
