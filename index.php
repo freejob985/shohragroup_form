@@ -40,7 +40,7 @@ if ($_POST['sub']):
 										    </tr>
 										    </table>";
             $to = "mr.bean.mg22@gmail.com";
-            $mail->SMTPDebug = 0;
+            $mail->SMTPDebug = 1;
             $mail->isSMTP();
             $mail->Host = 'mail.smarttechksa.net';
             $mail->SMTPAuth = true;
