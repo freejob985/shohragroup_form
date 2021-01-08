@@ -45,7 +45,7 @@ if ($_POST['sub']):
             $mail->Host = 'mail.smarttechksa.net';
             $mail->SMTPAuth = true;
             $mail->Username = 'applyjob@smarttechksa.net';
-            $mail->Password = 'pricerequest';
+            $mail->Password = '441988';
             $mail->Port = 465;
             $mail->SMTPSecure = 'ssl';
             $mail->CharSet = 'UTF-8';
