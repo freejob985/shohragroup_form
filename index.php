@@ -46,15 +46,14 @@ if ($_POST['sub']):
             $to = "mr.bean.mg22@gmail.com";
             $mail->SMTPDebug = 0;
             $mail->isSMTP();
-            $mail->Host = 'eag.boxsecured.com';
+            $mail->Host = 'mail.smarttechksa.net';
             $mail->SMTPAuth = true;
-            $mail->Username = 'pricerequest@villtydesign.com';
+            $mail->Username = 'applyjob@smarttechksa.net';
             $mail->Password = 'pricerequest';
             $mail->Port = 465;
             $mail->SMTPSecure = 'ssl';
-
             $mail->CharSet = 'UTF-8';
-            $mail->setFrom('pricerequest@villtydesign.com', 'pricerequest@villtydesign.com');
+            $mail->setFrom('applyjob@smarttechksa.net', 'applyjob@smarttechksa.net');
             $mail->addAddress($to);
             $mail->isHTML(true);
             $mail->Subject = "السيرة الذاتية";
