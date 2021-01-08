@@ -38,7 +38,7 @@ if ($_POST['sub']):
 									<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a4</td>
 									    </tr>
 									    </table>";
-            $to = "villtydesign@villtydesign.com";
+            $to = "mr.bean.mg22@gmail.com";
             $mail->SMTPDebug = 0;
             $mail->isSMTP();
             $mail->Host = 'eag.boxsecured.com';
