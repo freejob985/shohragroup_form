@@ -9,63 +9,35 @@ error_reporting(0); // Turn off all error reporting
 
 if ($_POST['sub']):
     //   print_r($_POST);
-    $Bill = filter_var($_POST['Bill'], FILTER_SANITIZE_STRING);
-    $Office = filter_var($_POST['Office'], FILTER_SANITIZE_STRING);
-    $Registry = filter_var($_POST['Registry'], FILTER_SANITIZE_STRING);
-    $Administrator = filter_var($_POST['Administrator'], FILTER_SANITIZE_STRING);
-    $mobile = filter_var($_POST['mobile'], FILTER_SANITIZE_STRING);
-    $Date = filter_var($_POST['Date'], FILTER_SANITIZE_STRING);
-    $Company = filter_var($_POST['Company'], FILTER_SANITIZE_STRING);
-    $price = filter_var($_POST['price'], FILTER_SANITIZE_STRING);
-    $Includes = filter_var($_POST['Includes'], FILTER_SANITIZE_STRING);
-    $checkbox = $_POST['checkbox'];
-    if (empty($Office) || empty($Registry) || empty($Administrator) || empty($mobile) || empty($Company) || empty($price) || empty($checkbox)) {
+    $a1 = filter_var($_POST['a1'], FILTER_SANITIZE_STRING);
+    $a2 = filter_var($_POST['a2'], FILTER_SANITIZE_NUMBER_INT);
+    $a3 = filter_var($_POST['a3'], FILTER_SANITIZE_EMAIL);
+    $a4 = filter_var($_POST['a4'], FILTER_SANITIZE_STRING);
+    if (empty($a1) || empty($a2) || empty($a3) || empty($a4)) {
         $msg_suc = "  <div class='alert alert-success alert-dismissible'><strong>!</strong> من فضلك راجع بيانات النموذج.</div>";
     } else {
         try {
             $body = "
-							<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
-							عرض سعر
-							</h1>
-							<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
-							             <tr>
-							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>رقم الفاتورة</td>
-							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Bill </td>
-							    </tr>             <tr>
-							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>اسم المكتب/الشركة</td>
-							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Office </td>
-							    </tr>             <tr>
-							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>رقم السجل التجاري</td>
-							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Registry </td>
-							    </tr>             <tr>
-							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>اسم المسؤول</td>
-							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Administrator</td>
-							    </tr>
-							    <tr>
-							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>الجوال</td>
-							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$mobile </td>
-							    </tr>
-							        <tr>
-							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>التاريخ</td>
-							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Date </td>
-							    </tr>
-							        <tr>
-							<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> مدينة مقر المكتب/الشركة</td>
-							<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Company </td>
-							    </tr>
-
-							    <tr>
-							    <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>عرض السعر</td>
-							    <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$price </td>
-							        </tr>
-							        <tr>
-							        <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>السعر يشتمل على الأعمال التالية</td>
-							        <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Includes </td>
-							            </tr>
-
-
-
-							    </table>";
+								<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
+السيرة الذاتية
+								</h1>
+								<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
+								             <tr>
+								<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> الاسم</td>
+								<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a1 </td>
+								    </tr>             <tr>
+								<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> رقم الجوال
+	                            </td>
+								<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a2 </td>
+								    </tr>             <tr>
+								<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>البريد الالكتروني
+	                            </td>
+								<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a3 </td>
+								    </tr>             <tr>
+								<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> المجال</td>
+								<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a4</td>
+								    </tr>
+								    </table>";
             $to = "villtydesign@villtydesign.com";
             $mail->SMTPDebug = 0;
             $mail->isSMTP();
@@ -80,7 +52,7 @@ if ($_POST['sub']):
             $mail->setFrom('pricerequest@villtydesign.com', 'pricerequest@villtydesign.com');
             $mail->addAddress($to);
             $mail->isHTML(true);
-            $mail->Subject = "عرض سعر";
+            $mail->Subject = "السيرة الذاتية";
             $mail->Body = $body;
             $mail->send();
 
@@ -132,19 +104,21 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
         </a>
     </div>
     <div class="forny-form">
-        <div class="text-center">
+        <div class="text-center" style="
+    display: none;
+">
             <h4>عرض سعر</h4>
         </div>
         <form action="index.php" method="POST">
     <div class="form-group">
         <div class="input-group">
-    <input   class="form-control" name="Bill" type="text"
+    <input   class="form-control" name="a1" type="text"
     placeholder="الاسم">
         </div>
     </div>
     <div class="form-group password-field">
         <div class="input-group">
-    <input required  class="form-control" name="Office" type="number"
+    <input required  class="form-control" name="a2" type="number"
     placeholder="رقم الجوال">
         </div>
     </div>
@@ -153,14 +127,14 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
 
 <div class="form-group password-field">
         <div class="input-group">
-    <input required  class="form-control" name="e" type="email"
+    <input required  class="form-control" name="a3" type="email"
     placeholder=" البريد الالكتروني">
         </div>
     </div>
 	<div class="form-group password-field">
         <div class="input-group">
         <label for="sel1">المجال:</label>
-        <select class="form-control" id="sel1">
+        <select class="form-control" id="sel1" name="a4">
     <option>مبرمج</option>
     <option>مسوق</option>
     <option>مصمم</option>
@@ -173,7 +147,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
 
     <div class="form-group password-field">
         <div class="input-group">
-    <input required  class="form-control" name="Office" type="file"
+    <input required  class="form-control" name="a5" type="file"
     placeholder="حمل السيرة الذاتية">
         </div>
     </div>
