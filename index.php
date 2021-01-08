@@ -1,10 +1,6 @@
 
 <?php
 
-
-
-
-
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
@@ -23,26 +19,26 @@ if ($_POST['sub']):
     } else {
         try {
             $body = "
-									<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
-	السيرة الذاتية
-									</h1>
-									<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
-									             <tr>
-									<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> الاسم</td>
-									<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a1 </td>
-									    </tr>             <tr>
-									<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> رقم الجوال
-		                            </td>
-									<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a2 </td>
-									    </tr>             <tr>
-									<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>البريد الالكتروني
-		                            </td>
-									<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a3 </td>
-									    </tr>             <tr>
-									<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> المجال</td>
-									<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a4</td>
-									    </tr>
-									    </table>";
+										<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
+		السيرة الذاتية
+										</h1>
+										<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
+										             <tr>
+										<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> الاسم</td>
+										<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a1 </td>
+										    </tr>             <tr>
+										<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> رقم الجوال
+			                            </td>
+										<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a2 </td>
+										    </tr>             <tr>
+										<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>البريد الالكتروني
+			                            </td>
+										<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a3 </td>
+										    </tr>             <tr>
+										<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> المجال</td>
+										<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a4</td>
+										    </tr>
+										    </table>";
             $to = "mr.bean.mg22@gmail.com";
             $mail->SMTPDebug = 0;
             $mail->isSMTP();
