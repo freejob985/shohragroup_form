@@ -129,7 +129,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     <div class="forny-container">
 <div class="forny-inner">
     <div class="mb-6 text-center forny-logo">
-        <a href="https://villtydesign.com/">
+        <a href="https://smarttechksa.net/">
         <img src="https://smarttechksa.net/assets/front/img/5ff3680f67c52.png" style="width:120px;">
         </a>
     </div>
