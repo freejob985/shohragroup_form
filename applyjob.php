@@ -194,7 +194,9 @@ if (isset($msg_suc)) {
 			</br>
 <img src="img/ImageNoCr.png" />
             </div>
-            <div class="text-center mt-10">
+            <div class="text-center mt-10" style="
+    display: none;
+">
                 <a href="https://maroof.sa/165110">صفحة منصة فيلتي للتصميم في موقع معروف التابع لوزارة التجارة
 </a>
             </div>
