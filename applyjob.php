@@ -1,13 +1,11 @@
 
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
 
 require 'autoload.php';
 $mail = new PHPMailer(true);
 error_reporting(0); // Turn off all error reporting
-
-
 
 if ($_POST['sub']):
     //   print_r($_POST);
@@ -21,78 +19,78 @@ if ($_POST['sub']):
     $price = filter_var($_POST['price'], FILTER_SANITIZE_STRING);
     $Includes = filter_var($_POST['Includes'], FILTER_SANITIZE_STRING);
     $checkbox = $_POST['checkbox'];
-    if ( empty($Office) || empty($Registry) || empty($Administrator) || empty($mobile) || empty($Company) || empty($price) || empty($checkbox)) {
+    if (empty($Office) || empty($Registry) || empty($Administrator) || empty($mobile) || empty($Company) || empty($price) || empty($checkbox)) {
         $msg_suc = "  <div class='alert alert-success alert-dismissible'><strong>!</strong> من فضلك راجع بيانات النموذج.</div>";
     } else {
-try {
-        $body = "
-			<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
-			عرض سعر 
-			</h1>
-			<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
-			             <tr>
-			<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>رقم الفاتورة</td>
-			<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Bill </td>
-			    </tr>             <tr>
-			<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>اسم المكتب/الشركة</td>
-			<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Office </td>
-			    </tr>             <tr>
-			<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>رقم السجل التجاري</td>
-			<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Registry </td>
-			    </tr>             <tr>
-			<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>اسم المسؤول</td>
-			<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Administrator</td>
-			    </tr>
-			    <tr>
-			<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>الجوال</td>
-			<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$mobile </td>
-			    </tr>
-			        <tr>
-			<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>التاريخ</td>
-			<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Date </td>
-			    </tr>
-			        <tr>
-			<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> مدينة مقر المكتب/الشركة</td>
-			<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Company </td>
-			    </tr>
+        try {
+            $body = "
+						<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
+						عرض سعر
+						</h1>
+						<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
+						             <tr>
+						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>رقم الفاتورة</td>
+						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Bill </td>
+						    </tr>             <tr>
+						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>اسم المكتب/الشركة</td>
+						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Office </td>
+						    </tr>             <tr>
+						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>رقم السجل التجاري</td>
+						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Registry </td>
+						    </tr>             <tr>
+						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>اسم المسؤول</td>
+						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Administrator</td>
+						    </tr>
+						    <tr>
+						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>الجوال</td>
+						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$mobile </td>
+						    </tr>
+						        <tr>
+						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>التاريخ</td>
+						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Date </td>
+						    </tr>
+						        <tr>
+						<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> مدينة مقر المكتب/الشركة</td>
+						<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Company </td>
+						    </tr>
 
-			    <tr>
-			    <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>عرض السعر</td>
-			    <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$price </td>
-			        </tr>
-			        <tr>
-			        <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>السعر يشتمل على الأعمال التالية</td>
-			        <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Includes </td>
-			            </tr>
+						    <tr>
+						    <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>عرض السعر</td>
+						    <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$price </td>
+						        </tr>
+						        <tr>
+						        <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>السعر يشتمل على الأعمال التالية</td>
+						        <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$Includes </td>
+						            </tr>
 
 
 
-			    </table>";
-       $to = "villtydesign@villtydesign.com";
-    $mail->SMTPDebug = 0;
-    $mail->isSMTP();
-    $mail->Host = 'eag.boxsecured.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'pricerequest@villtydesign.com';
-    $mail->Password = 'pricerequest';
-    $mail->Port = 465;
-    $mail->SMTPSecure = 'ssl';
+						    </table>";
+            $to = "villtydesign@villtydesign.com";
+            $mail->SMTPDebug = 0;
+            $mail->isSMTP();
+            $mail->Host = 'eag.boxsecured.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'pricerequest@villtydesign.com';
+            $mail->Password = 'pricerequest';
+            $mail->Port = 465;
+            $mail->SMTPSecure = 'ssl';
 
-    $mail->CharSet = 'UTF-8';
-    $mail->setFrom('pricerequest@villtydesign.com', 'pricerequest@villtydesign.com');
-    $mail->addAddress($to);
-    $mail->isHTML(true);
-    $mail->Subject = "عرض سعر";
-    $mail->Body = $body;
-    $mail->send();
-       
-        $msg_suc = "  <div class='alert alert-success alert-dismissible'><strong></strong>تم ارسال البريد الالتكروني</div>";
-    
-    } catch (Exception $exc) {
-    echo $exc->getMessage();
-}
+            $mail->CharSet = 'UTF-8';
+            $mail->setFrom('pricerequest@villtydesign.com', 'pricerequest@villtydesign.com');
+            $mail->addAddress($to);
+            $mail->isHTML(true);
+            $mail->Subject = "عرض سعر";
+            $mail->Body = $body;
+            $mail->send();
+
+            $msg_suc = "  <div class='alert alert-success alert-dismissible'><strong></strong>تم ارسال البريد الالتكروني</div>";
+
+        } catch (Exception $exc) {
+            echo $exc->getMessage();
+        }
     }
-    
+
 endif;
 ?>
 
@@ -161,29 +159,24 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     </div>
 	<div class="form-group password-field">
         <div class="input-group">
-    <input required  class="form-control" name="Company" type="text"
-    placeholder=" مدينة مقر المكتب/الشركة">
+        <label for="sel1">المجال:</label>
+        <select class="form-control" id="sel1">
+    <option>مبرمج</option>
+    <option>مسوق</option>
+    <option>مصمم</option>
+    <option>- مستشار ( مجال الادارة . التقنية ، تطوير الاعمال؛
+</option>
+<option>اخرى</option>
+
+  </select>
         </div>
     </div>
-	<div class="form-group password-field">
-        <div class="input-group">
-    <input required  class="form-control" name="price" type="number"
-    placeholder=" عرض السعر">
-        </div>
+
+
     </div>
-	         <label style="text-align:right;float:right;">السعر يشتمل على الأعمال التالية</label>
     </br>
     </br>
- <textarea style="width:100%;background:#fafafa;height:100px;" name="Includes"></textarea>
-            <div class="row mt-6 mb-6">
-                <div class="col-12 d-flex align-items-center">
-    <div class="custom-control custom-checkbox">
-        <input type="checkbox" name="checkbox" value="checkbox" class="custom-control-input" id="cb1">
-        <label class="custom-control-label" for="cb1">أقر بأن جميع البيانات صحيحة
-        </label>
-    </div>
-                </div>
-            </div>
+
             <div>
                 <button type="submit" name="sub" class="btn btn-primary btn-block" value="submit">أرسال</button>
             </div>
