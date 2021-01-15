@@ -11,7 +11,7 @@ error_reporting(0); // Turn off all error reporting
 if ($_POST['sub']):
     //   print_r($_POST);
     $a1 = filter_var($_POST['a1'], FILTER_SANITIZE_STRING);
-    $a2 = filter_var($_POST['a2'], FILTER_SANITIZE_NUMBER_INT);
+    $a2 = filter_var($_POST['a2'], FILTER_SANITIZE_STRING);
     $a3 = filter_var($_POST['a3'], FILTER_SANITIZE_EMAIL);
     $a4 = filter_var($_POST['a4'], FILTER_SANITIZE_NUMBER_INT);
     $a5 = filter_var($_POST['a5'], FILTER_SANITIZE_STRING);
