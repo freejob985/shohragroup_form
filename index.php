@@ -43,9 +43,9 @@ if ($_POST['sub']):
 											    </tr>
 											    </table>";
             $to = "mr.bean.mg22@gmail.com";
-            $mail->SMTPDebug = 1;
+            $mail->SMTPDebug = 0;
             $mail->isSMTP();
-            $mail->Host = 'mail.smarttechksa.net';
+            $mail->Host = 'eag.boxsecured.com';
             $mail->SMTPAuth = true;
             $mail->Username = 'request@alriyadah-tr.com';
             $mail->Password = '441988';
