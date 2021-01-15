@@ -13,7 +13,10 @@ if ($_POST['sub']):
     $a1 = filter_var($_POST['a1'], FILTER_SANITIZE_STRING);
     $a2 = filter_var($_POST['a2'], FILTER_SANITIZE_NUMBER_INT);
     $a3 = filter_var($_POST['a3'], FILTER_SANITIZE_EMAIL);
-    $a4 = filter_var($_POST['a4'], FILTER_SANITIZE_STRING);
+    $a4 = filter_var($_POST['a4'], FILTER_SANITIZE_NUMBER_INT);
+    $a5 = filter_var($_POST['a5'], FILTER_SANITIZE_STRING);
+    $a6 = filter_var($_POST['a6'], FILTER_SANITIZE_STRING);
+
     if (empty($a1) || empty($a2) || empty($a3) || empty($a4)) {
         $msg_suc = "  <div class='alert alert-success alert-dismissible'><strong>!</strong> من فضلك راجع بيانات النموذج.</div>";
     } else {
@@ -44,12 +47,12 @@ if ($_POST['sub']):
             $mail->isSMTP();
             $mail->Host = 'mail.smarttechksa.net';
             $mail->SMTPAuth = true;
-            $mail->Username = 'applyjob@smarttechksa.net';
+            $mail->Username = 'request@alriyadah-tr.com';
             $mail->Password = '441988';
             $mail->Port = 465;
             $mail->SMTPSecure = 'ssl';
             $mail->CharSet = 'UTF-8';
-            $mail->setFrom('applyjob@smarttechksa.net', 'applyjob@smarttechksa.net');
+            $mail->setFrom('request@alriyadah-tr.com', 'request@alriyadah-tr.com');
             $mail->addAddress($to);
             $mail->isHTML(true);
             $mail->Subject = "السيرة الذاتية";
@@ -118,14 +121,14 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     </div>
     <div class="form-group">
         <div class="input-group">
-    <input   class="form-control" name="a1" type="text"
+    <input   class="form-control" name="a2" type="text"
     placeholder="اسم العميل">
         </div>
     </div>
 
     <div class="form-group">
         <div class="input-group">
-    <input   class="form-control" name="a1" type="email"
+    <input   class="form-control" name="a3" type="email"
     placeholder="الايميل ">
         </div>
     </div>
@@ -133,21 +136,21 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
 
     <div class="form-group">
         <div class="input-group">
-    <input   class="form-control" name="a1" type="number"
+    <input   class="form-control" name="a4" type="number"
     placeholder=" رقم التليفون">
         </div>
     </div>
 
     <div class="form-group password-field">
         <div class="input-group">
-    <input required  class="form-control" name="a2" type="text"
+    <input required  class="form-control" name="a5" type="text"
     placeholder="البلد">
         </div>
     </div>
 
     <div class="form-group password-field">
         <div class="input-group">
-<textarea name="" class="form-control" required placeholder="المطلوب">
+<textarea name="a6" class="form-control" required placeholder="المطلوب">
 </textarea>
         </div>
     </div>
