@@ -19,26 +19,26 @@ if ($_POST['sub']):
     } else {
         try {
             $body = "
-										<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
-		السيرة الذاتية
-										</h1>
-										<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
-										             <tr>
-										<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> الاسم</td>
-										<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a1 </td>
-										    </tr>             <tr>
-										<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> رقم الجوال
-			                            </td>
-										<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a2 </td>
-										    </tr>             <tr>
-										<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>البريد الالكتروني
-			                            </td>
-										<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a3 </td>
-										    </tr>             <tr>
-										<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> المجال</td>
-										<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a4</td>
-										    </tr>
-										    </table>";
+											<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
+			السيرة الذاتية
+											</h1>
+											<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
+											             <tr>
+											<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> الاسم</td>
+											<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a1 </td>
+											    </tr>             <tr>
+											<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> رقم الجوال
+				                            </td>
+											<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a2 </td>
+											    </tr>             <tr>
+											<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>البريد الالكتروني
+				                            </td>
+											<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a3 </td>
+											    </tr>             <tr>
+											<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> المجال</td>
+											<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a4</td>
+											    </tr>
+											    </table>";
             $to = "mr.bean.mg22@gmail.com";
             $mail->SMTPDebug = 1;
             $mail->isSMTP();
@@ -99,60 +99,58 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     <div class="forny-container">
 <div class="forny-inner">
     <div class="mb-6 text-center forny-logo">
-        <a href="https://smarttechksa.net/">
-        <img src="https://smarttechksa.net/assets/front/img/5ff3680f67c52.png" style="width:120px;">
+        <a href="https://alriyadah-tr.com/">
+        <img src="https://alriyadah-tr.com/uploads/0000/1/2021/01/08/untitled-1.png" style="width:120px;">
         </a>
     </div>
     <div class="forny-form">
         <div class="text-center" style="
     display: none;
 ">
-            <h4>عرض سعر</h4>
+            <h4>تقديم طلب</h4>
         </div>
         <form action="index.php" method="POST">
     <div class="form-group">
         <div class="input-group">
     <input   class="form-control" name="a1" type="text"
-    placeholder="الاسم">
+    placeholder="اسم الشركه">
         </div>
     </div>
-    <div class="form-group password-field">
+    <div class="form-group">
         <div class="input-group">
-    <input required  class="form-control" name="a2" type="number"
-    placeholder="رقم الجوال">
+    <input   class="form-control" name="a1" type="text"
+    placeholder="اسم العميل">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group">
+    <input   class="form-control" name="a1" type="email"
+    placeholder="الايميل ">
         </div>
     </div>
 
 
-
-<div class="form-group password-field">
+    <div class="form-group">
         <div class="input-group">
-    <input required  class="form-control" name="a3" type="email"
-    placeholder=" البريد الالكتروني">
-        </div>
-    </div>
-	<div class="form-group password-field">
-        <div class="input-group">
-        <label for="sel1">المجال:</label>
-        <select class="form-control" id="sel1" name="a4">
-    <option>مبرمج</option>
-    <option>مسوق</option>
-    <option>مصمم</option>
-<option>مستشار ( مجال الادارة . التقنية ، تطوير الاعمال</option>
-<option>اخرى</option>
-
-  </select>
+    <input   class="form-control" name="a1" type="number"
+    placeholder=" رقم التليفون">
         </div>
     </div>
 
     <div class="form-group password-field">
         <div class="input-group">
-        <label for="sel1">حمل السيرة الذاتية:</label>
-    <input required  class="form-control" name="a5" type="file"
-    placeholder="حمل السيرة الذاتية">
+    <input required  class="form-control" name="a2" type="text"
+    placeholder="البلد">
         </div>
     </div>
 
+    <div class="form-group password-field">
+        <div class="input-group">
+<textarea name="" class="form-control" required placeholder="المطلوب">
+</textarea>
+        </div>
+    </div>
     </div>
     </br>
     </br>
