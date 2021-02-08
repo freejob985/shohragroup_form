@@ -78,7 +78,9 @@ if ($_POST['sub']):
             $msg_suc = "  <div class='alert alert-success alert-dismissible'><strong></strong>تم ارسال البريد الالتكروني</div>";
 
         } catch (Exception $exc) {
-            echo $exc->getMessage();
+            echo $mail->ErrorInfo;
+
+
         }
     }
 
