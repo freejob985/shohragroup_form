@@ -142,18 +142,13 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
         </div>
     </div>
 
-    <div class="form-group password-field">
-        <div class="input-group">
-    <input required  class="form-control" name="a5" type="text"
-    placeholder="طريقة الدفع">
-        </div>
-    </div>
+
 
 
     <div class="form-group password-field">
         <div class="input-group">
         <label>طريقة الدفع</label>
-        <select class="form-control" id="sel1" name="a6">
+        <select class="form-control" id="sel1" name="a5">
         <option>كاش </option>
         <option>تقسيط </option>
       </select>
@@ -163,23 +158,18 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     <div class="form-group password-field">
         <div class="input-group">
         <label>التقسيط</label>
-        <select class="form-control" id="sel1" name="a7">
+        <select class="form-control" id="sel1" name="a6">
         <option>المقدم المتاح </option>
         <option>عدد سنوات التقسيط  </option>
       </select>
         </div>
     </div>
 
-    <div class="form-group password-field">
-        <div class="input-group">
-    <input required  class="form-control" name="a8" type="text"
-    placeholder="طريقة الدفع">
-        </div>
-    </div>
+
 
     <div class="form-group password-field">
         <div class="input-group">
-    <input required  class="form-control" name="a9" type="number"
+    <input required  class="form-control" name="a7" type="number"
     placeholder="الميعاد المطلوب لاتمام التعاقد">
         </div>
     </div>
