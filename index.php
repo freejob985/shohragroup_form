@@ -9,7 +9,7 @@ $mail = new PHPMailer(true);
 error_reporting(0); // Turn off all error reporting
 
 if ($_POST['sub']):
-    //   print_r($_POST);
+       print_r($_POST);
     $a1 = filter_var($_POST['a1'], FILTER_SANITIZE_STRING);
     $a2 = filter_var($_POST['a2'], FILTER_SANITIZE_STRING);
     $a3 = filter_var($_POST['a3'], FILTER_SANITIZE_STRING);
