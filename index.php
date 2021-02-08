@@ -107,29 +107,27 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
         </a>
     </div>
     <div class="forny-form">
-        <div class="text-center" style="
-    display: none;
-">
-            <h4>تقديم طلب</h4>
+        <div class="text-center" >
+            <h4>استمارة حجز مجانية </h4>
         </div>
         <form action="index.php" method="POST">
     <div class="form-group">
         <div class="input-group">
     <input   class="form-control" name="a1" type="text"
-    placeholder="اسم الشركه">
+    placeholder="اسم العميل">
         </div>
     </div>
     <div class="form-group">
         <div class="input-group">
     <input   class="form-control" name="a2" type="text"
-    placeholder="اسم العميل">
+    placeholder="رقم العضوية">
         </div>
     </div>
 
     <div class="form-group">
         <div class="input-group">
     <input   class="form-control" name="a3" type="email"
-    placeholder="الايميل ">
+    placeholder="رقم الوحدة  ">
         </div>
     </div>
 
@@ -137,16 +135,31 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     <div class="form-group">
         <div class="input-group">
     <input   class="form-control" name="a4" type="number"
-    placeholder=" رقم التليفون">
+    placeholder=" المساحة">
         </div>
     </div>
 
     <div class="form-group password-field">
         <div class="input-group">
     <input required  class="form-control" name="a5" type="text"
-    placeholder="البلد">
+    placeholder="طريقة الدفع">
         </div>
     </div>
+
+
+    <div class="form-group password-field">
+        <div class="input-group">
+        <select class="form-control" id="sel1">
+        <option>كاش </option>
+        <option>تقسيط </option>
+      </select>
+        </div>
+    </div>
+
+
+
+   
+
 
     <div class="form-group password-field">
         <div class="input-group">
