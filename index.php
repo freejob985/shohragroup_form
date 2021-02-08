@@ -169,7 +169,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
 
     <div class="form-group password-field">
         <div class="input-group">
-    <input required  class="form-control" name="a7" type="number"
+    <input required  class="form-control" name="a7" type="text"
     placeholder="الميعاد المطلوب لاتمام التعاقد">
         </div>
     </div>
