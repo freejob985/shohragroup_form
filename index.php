@@ -16,32 +16,35 @@ if ($_POST['sub']):
     $a4 = filter_var($_POST['a4'], FILTER_SANITIZE_NUMBER_INT);
     $a5 = filter_var($_POST['a5'], FILTER_SANITIZE_STRING);
     $a6 = filter_var($_POST['a6'], FILTER_SANITIZE_STRING);
+    $a6 = filter_var($_POST['a7'], FILTER_SANITIZE_STRING);
+    $a6 = filter_var($_POST['a8'], FILTER_SANITIZE_STRING);
+    $a6 = filter_var($_POST['a9'], FILTER_SANITIZE_STRING);
 
     if (empty($a1) || empty($a2) || empty($a3) || empty($a4)) {
         $msg_suc = "  <div class='alert alert-success alert-dismissible'><strong>!</strong> من فضلك راجع بيانات النموذج.</div>";
     } else {
         try {
             $body = "
-											<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
-			السيرة الذاتية
-											</h1>
-											<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
-											             <tr>
-											<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> الاسم</td>
-											<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a1 </td>
-											    </tr>             <tr>
-											<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> رقم الجوال
-				                            </td>
-											<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a2 </td>
-											    </tr>             <tr>
-											<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>البريد الالكتروني
-				                            </td>
-											<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a3 </td>
-											    </tr>             <tr>
-											<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> المجال</td>
-											<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a4</td>
-											    </tr>
-											    </table>";
+												<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
+				السيرة الذاتية
+												</h1>
+												<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
+												             <tr>
+												<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> الاسم</td>
+												<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a1 </td>
+												    </tr>             <tr>
+												<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> رقم الجوال
+					                            </td>
+												<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a2 </td>
+												    </tr>             <tr>
+												<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>البريد الالكتروني
+					                            </td>
+												<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a3 </td>
+												    </tr>             <tr>
+												<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> المجال</td>
+												<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a4</td>
+												    </tr>
+												    </table>";
             $to = "mr.bean.mg22@gmail.com";
             $mail->SMTPDebug = 0;
             $mail->isSMTP();
@@ -150,7 +153,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     <div class="form-group password-field">
         <div class="input-group">
         <label>طريقة الدفع</label>
-        <select class="form-control" id="sel1">
+        <select class="form-control" id="sel1" name="a6">
         <option>كاش </option>
         <option>تقسيط </option>
       </select>
@@ -160,7 +163,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     <div class="form-group password-field">
         <div class="input-group">
         <label>التقسيط</label>
-        <select class="form-control" id="sel1">
+        <select class="form-control" id="sel1" name="a7">
         <option>المقدم المتاح </option>
         <option>عدد سنوات التقسيط  </option>
       </select>
@@ -169,14 +172,14 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
 
     <div class="form-group password-field">
         <div class="input-group">
-    <input required  class="form-control" name="a5" type="text"
+    <input required  class="form-control" name="a8" type="text"
     placeholder="طريقة الدفع">
         </div>
     </div>
 
     <div class="form-group password-field">
         <div class="input-group">
-    <input required  class="form-control" name="a5" type="text"
+    <input required  class="form-control" name="a9" type="number"
     placeholder="الميعاد المطلوب لاتمام التعاقد">
         </div>
     </div>
