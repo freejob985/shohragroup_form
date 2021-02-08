@@ -12,53 +12,66 @@ if ($_POST['sub']):
     //   print_r($_POST);
     $a1 = filter_var($_POST['a1'], FILTER_SANITIZE_STRING);
     $a2 = filter_var($_POST['a2'], FILTER_SANITIZE_STRING);
-    $a3 = filter_var($_POST['a3'], FILTER_SANITIZE_EMAIL);
+    $a3 = filter_var($_POST['a3'], FILTER_SANITIZE_STRING);
     $a4 = filter_var($_POST['a4'], FILTER_SANITIZE_NUMBER_INT);
     $a5 = filter_var($_POST['a5'], FILTER_SANITIZE_STRING);
     $a6 = filter_var($_POST['a6'], FILTER_SANITIZE_STRING);
     $a6 = filter_var($_POST['a7'], FILTER_SANITIZE_STRING);
-    $a6 = filter_var($_POST['a8'], FILTER_SANITIZE_STRING);
-    $a6 = filter_var($_POST['a9'], FILTER_SANITIZE_STRING);
 
     if (empty($a1) || empty($a2) || empty($a3) || empty($a4)) {
         $msg_suc = "  <div class='alert alert-success alert-dismissible'><strong>!</strong> من فضلك راجع بيانات النموذج.</div>";
     } else {
         try {
             $body = "
-												<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
-				السيرة الذاتية
-												</h1>
-												<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
-												             <tr>
-												<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> الاسم</td>
-												<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a1 </td>
-												    </tr>             <tr>
-												<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> رقم الجوال
-					                            </td>
-												<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a2 </td>
-												    </tr>             <tr>
-												<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>البريد الالكتروني
-					                            </td>
-												<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a3 </td>
-												    </tr>             <tr>
-												<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> المجال</td>
-												<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a4</td>
-												    </tr>
-												    </table>";
+													<h1 style=' font-size: 50px; font-family: tahoma; color: #2cd9ee; text-align: left; text-transform: uppercase;  '>
+				استمارة حجز مجانية
+
+													</h1>
+													<table style='background: #fafafa;font-family: tahoma;font-size: 12px;line-height: 51px;border: 1px ridge;padding: 0.5%;width: 100%;direction: rtl;text-align: center;/* box-shadow: -1px 4px #626262; */'>
+													             <tr>
+													<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> اسم العميل</td>
+													<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a1 </td>
+													    </tr>             <tr>
+													<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> رقم العضوية
+						                            </td>
+													<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a2 </td>
+													    </tr>             <tr>
+													<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '>رقم الوحدة
+						                            </td>
+													<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a3 </td>
+													    </tr>
+
+	                                                    <tr>
+													<td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> المساحة</td>
+													<td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a4</td>
+													    </tr>
+	                                                    <tr>
+	                                                    <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> طريقة الدفع</td>
+	                                                    <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a5</td>
+	                                                        </tr>
+	                                                        <tr>
+	                                                        <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> التقسيط</td>
+	                                                        <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a6</td>
+	                                                            </tr>
+	                                                            <tr>
+	                                                            <td style=' width: 100px; text-transform: uppercase; padding: 1%; border: 1px solid #ffffff; font-family: tahoma; '> الميعاد المطلوب لاتمام التعاقد</td>
+	                                                            <td style=' border: 1px solid #ffffff;  font-family: tahoma;'>$a7</td>
+	                                                                </tr>
+													    </table>";
             $to = "mr.bean.mg22@gmail.com";
             $mail->SMTPDebug = 0;
             $mail->isSMTP();
             $mail->Host = 'eag.boxsecured.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'request@alriyadah-tr.com';
+            $mail->Username = 'form@booking.alrayadaonline.com';
             $mail->Password = '441988';
             $mail->Port = 465;
             $mail->SMTPSecure = 'ssl';
             $mail->CharSet = 'UTF-8';
-            $mail->setFrom('request@alriyadah-tr.com', 'request@alriyadah-tr.com');
+            $mail->setFrom('form@booking.alrayadaonline.com', 'form@booking.alrayadaonline.com');
             $mail->addAddress($to);
             $mail->isHTML(true);
-            $mail->Subject = "السيرة الذاتية";
+            $mail->Subject = "استمارة حجز مجانية";
             $mail->Body = $body;
             $mail->send();
 
