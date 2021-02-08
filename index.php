@@ -79,7 +79,7 @@ endif;
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Authentication forms">
     <meta name="author" content="Arasari Studio">
-    <title>villtydesign</title>
+    <title>alrayadaonline</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
 <link href="css/theme-02.css" rel="stylesheet">
