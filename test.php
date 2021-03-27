@@ -948,5 +948,25 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/demo.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#TrainerCountry").change(function() {
+                var obj = $(this);
+                $.getJSON("https://www.actksa.com/ar/applyastrainer/Admin/TrainerCities/GetCities/" + obj.val(), function(result) {
+                    var options = $("#TrainerCity");
+                    options.attr("disabled", "disabled");
+                    options.empty();
+                    options.append($("<option />").text("اختر المدينة"));
+                    $.each(result, function(i, item) {
+                        options.append($("<option />").val(item.Id).text(item.CityAr));
+                    });
+                    options.append($("<option />").val(0).text("آخر"));
+                    options.removeAttr("disabled");
+                    //     $("#TrainerCity").trigger("change");
+                });
+
+            });
+              });
+    </script>
 </body>
 </html>
