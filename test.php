@@ -117,7 +117,10 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
 </head>
 <body>
 <div class="forny-container">
-         <div class="container">
+         <div class="container" style="
+    background: white;
+    opacity: 1.5;
+">
             <div class="row">
                <div class="col-sm-12 mb-25">
                   <h2 class="title">
