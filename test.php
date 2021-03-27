@@ -113,6 +113,13 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     font-family: 'Tajawal';
     text-align: center;
 }
+.forny-container .is-valid, .forny-container .is-valid input:-webkit-autofill, .forny-container .is-valid input:-webkit-autofill:hover, .forny-container .is-valid input:-webkit-autofill:focus, .forny-container .is-valid input:-webkit-autofill:active {
+    background-color: hsla(152, 68%, 96%, 1);
+    background-color: var(--forny-color-success-100);
+    box-shadow: 0 0 0 30px hsl(152deg 68% 96%) inset !important;
+    box-shadow: 0 0 0 30px hsl(0deg 0% 100%) inset !important;
+}
+
 </style>
 </head>
 <body>
