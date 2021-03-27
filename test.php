@@ -119,7 +119,9 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
     box-shadow: 0 0 0 30px hsl(152deg 68% 96%) inset !important;
     box-shadow: 0 0 0 30px hsl(0deg 0% 100%) inset !important;
 }
-
+.form-group.clearfix.is-valid {
+    background: white;
+}
 </style>
 </head>
 <body>
