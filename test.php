@@ -970,46 +970,13 @@ endif;
                                     </li>
                                  </ul>
                               </li>
-                              <li class="col-sm-3">
-                                 <input id="SelCategories" name="SelCategories" type="checkbox" value="3"><input name="SelCategories" type="hidden" value="false">
-                                 الفنية
-                                 <ul class="list-unstyled" style="padding: 5px 20px;">
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="4"><input name="SelCategories" type="hidden" value="false">
-                                       الهندسة الكهربائية
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="5"><input name="SelCategories" type="hidden" value="false">
-                                       الهندسة العامة
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="6"><input name="SelCategories" type="hidden" value="false">
-                                       الهندسة الميكانيكية والمرافق الصناعية
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="7"><input name="SelCategories" type="hidden" value="false">
-                                       هندسة البترول، الغاز، الكيمياويات والمعالجات
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="8"><input name="SelCategories" type="hidden" value="false">
-                                       هندسة التوازن، الاستقرار، الصيانة والفحص
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="9"><input name="SelCategories" type="hidden" value="false">
-                                       هندسة المعادن واللحام والتآكل
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="21"><input name="SelCategories" type="hidden" value="false">
-                                       اللوجستية
-                                    </li>
-                                 </ul>
-                              </li>
-                              <li class="col-sm-3">
-                                 <input id="OtherCategories" name="chkOther" type="checkbox" value="true"> آخر
-                                 <div id="divOther" class="mt-15" style="display: none">
-                                    <textarea class="form-control" cols="20" id="OtherCategories" name="OtherCategories" rows="2"></textarea>
-                                 </div>
-                              </li>
+                        
                            </ul>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="form-group hidden">
-                  <label class="control-label col-sm-3">لمحة مختصرة <span class="red">*</span></label>
                   <div class="col-sm-6">
                      <textarea class="form-control" cols="20" id="Description" name="Description" placeholder="اضغط لاستعراض عينة للمحة المختصرة" rows="2"></textarea>
                   </div>
@@ -1018,16 +985,6 @@ endif;
                   </div>
                </div>
                <div id="captcha-wraper" class="form-group">
-                  <div class="col-sm-6 mb-15-xs">
-                     <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=ar"></script>
-                     <div class="g-recaptcha" data-sitekey="6Lcn2BETAAAAAFXAEhc1lgMcIsL6tqMCBe6UhuGt">
-                        <div style="width: 304px; height: 78px;">
-                           <div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lcn2BETAAAAAFXAEhc1lgMcIsL6tqMCBe6UhuGt&amp;co=aHR0cHM6Ly93d3cuYWN0a3NhLmNvbTo0NDM.&amp;hl=ar&amp;v=5mNs27FP3uLBP3KBPib88r1g&amp;size=normal&amp;cb=as8lr95myioi" width="304" height="78" role="presentation" name="a-6cjumjo6aahd" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div>
-                           <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                        </div>
-                        <iframe __idm_frm__="266" style="display: none;"></iframe>
-                     </div>
-                  </div>
                   <div class="col-sm-3 col-sm-offset-3">
                      <input type="submit" class="btn btn-primary btn-block" value="استمر">
                   </div>
