@@ -111,7 +111,7 @@ endif;
       </style>
    </head>
    <body>
-      <div class="forny-container">
+
          <div class="forny-inner">
             <div class="mb-6 text-center forny-logo">
                <a href="https://alriyadah-tr.com/">
@@ -952,7 +952,7 @@ endif;
       </div>
          </div>
       </div>
-      </div>
+ 
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/main.js"></script>
