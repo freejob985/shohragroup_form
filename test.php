@@ -921,60 +921,7 @@ endif;
                      </div>
                      <div class="col-sm-6"></div>
                   </div>
-                  <div class="row">
-                     <div class="form-group">
-                        <div class="col-sm-12">
-                           <ul class="list-unstyled row">
-                              <li class="col-sm-3">
-                                 <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
-                                 الإدارية
-                                 <ul class="list-unstyled" style="padding: 5px 20px;">
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="10"><input name="SelCategories" type="hidden" value="false">
-                                       إدارة الأعمال
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="11"><input name="SelCategories" type="hidden" value="false">
-                                       التطوير الشخصي ومهارات الاتصال
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="12"><input name="SelCategories" type="hidden" value="false">
-                                       إدارة المشاريع والعقود والإدارة الهندسية
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="13"><input name="SelCategories" type="hidden" value="false">
-                                       المالية والمحاسبية والتكاليف
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="14"><input name="SelCategories" type="hidden" value="false">
-                                       الموارد البشرية
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="15"><input name="SelCategories" type="hidden" value="false">
-                                       إدارة المواد التوريد والمشتريات
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="16"><input name="SelCategories" type="hidden" value="false">
-                                       السكرتارية وإدارة المكاتب
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="17"><input name="SelCategories" type="hidden" value="false">
-                                       العلاقات العامة وخدمات العملاء
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="18"><input name="SelCategories" type="hidden" value="false">
-                                       التسويق والمبيعات
-                                    </li>
-                                 </ul>
-                              </li>
-                              <li class="col-sm-3">
-                                 <input id="SelCategories" name="SelCategories" type="checkbox" value="2"><input name="SelCategories" type="hidden" value="false">
-                                 الأمن، الصحة والسلامة
-                                 <ul class="list-unstyled" style="padding: 5px 20px;">
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="19"><input name="SelCategories" type="hidden" value="false">
-                                       الصحة والسلامة
-                                    </li>
-                                    <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="20"><input name="SelCategories" type="hidden" value="false">
-                                       الأمن
-                                    </li>
-                                 </ul>
-                              </li>
-                        
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
+             
                </div>
                <div class="form-group hidden">
                   <div class="col-sm-6">
