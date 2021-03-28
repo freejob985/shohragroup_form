@@ -122,10 +122,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
 .form-group.clearfix.is-valid {
     background: white;
 }
-
 .forny-container {
-    background: url(../img/bg.jpg) center center no-repeat hsla(201, 78%, 46%, 1);
-    background: url(../img/bg.jpg) center center no-repeat var(--forny-color-accent-500);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
