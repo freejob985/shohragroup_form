@@ -139,6 +139,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
             </div>
             <form action="/ar/applyastrainer" class="form-horizontal" enctype="multipart/form-data" method="post" role="form" novalidate="novalidate">
                <input name="__RequestVerificationToken" type="hidden" value="PfxBs8jyHbAxRg-ZPGYSHEl5dvl2N373UbXmY5G9d3a4dfzmvfRx2EJhmnSsi2yOtBbG0bp93geKGxbFreU-pQ54QG50pqV6bnVlNYtpiqY1">
+               <div class="validation-summary-valid alert alert-danger col-sm-offset-3 col-sm-6" data-valmsg-summary="true">
                   <ul>
                      <li style="display:none"></li>
                   </ul>
@@ -473,7 +474,15 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
                      </div>
                      <div class="col-sm-6">
                         <div class="form-group clearfix">
-                          
+                           <label class="control-label col-sm-3">مدينة الاقامة <span class="red">*</span></label>
+                           <div class="input-group col-sm-9 ifrequiredcountry">
+                              <span class="input-group-addon">
+                              <i class="fa fa-building"></i>
+                              </span>
+                              <select class="form-control" id="TrainerCity" name="TrainerCity">
+                                 <option value="">اختر المدينة</option>
+                              </select>
+                           </div>
                            <div class="ifrequired ifrequired2 col-sm-9" style="margin-top: 2px;">
                               <div class="row">
                                  <div class="input-group">
@@ -932,8 +941,12 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
              
                </div>
                <div class="form-group hidden">
-                 
-                
+                  <div class="col-sm-6">
+                     <textarea class="form-control" cols="20" id="Description" name="Description" placeholder="اضغط لاستعراض عينة للمحة المختصرة" rows="2"></textarea>
+                  </div>
+                  <div class="col-sm-3 text-danger">
+                     <a class="showbio popupload" data-title="" data-body="انتونب روبنز، هو واحد من أكثر رجال التنمية البشرية نجاحا” في أمريكا، بل هو رجل التحفيز الأول ،حيث يتمتع بروح مرحة وأسلوب خطابي مقنع، ولعل سبب نجاحاته يعود إلى قصة كفاحه التي يرويها دائماً قبل أن يقرر أن يتغير، وعندها بدأ يستمع للأشرطة ويحضر المحاضرات حتى أصبح ما هو عليه"><small>اضغط لاستعراض عينة للمحة المختصرة</small></a>
+                  </div>
                </div>
                <div id="captcha-wraper" class="form-group">
                   <div class="col-sm-3 col-sm-offset-3">
