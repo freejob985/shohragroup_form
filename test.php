@@ -944,81 +944,138 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
          <ul class="list-unstyled row">
             <li class="col-sm-3">
                <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
-               الإدارية
-               <ul class="list-unstyled" style="padding: 5px 20px;">
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="10"><input name="SelCategories" type="hidden" value="false">
-                     إدارة الأعمال
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="11"><input name="SelCategories" type="hidden" value="false">
-                     التطوير الشخصي ومهارات الاتصال
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="12"><input name="SelCategories" type="hidden" value="false">
-                     إدارة المشاريع والعقود والإدارة الهندسية
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="13"><input name="SelCategories" type="hidden" value="false">
-                     المالية والمحاسبية والتكاليف
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="14"><input name="SelCategories" type="hidden" value="false">
-                     الموارد البشرية
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="15"><input name="SelCategories" type="hidden" value="false">
-                     إدارة المواد التوريد والمشتريات
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="16"><input name="SelCategories" type="hidden" value="false">
-                     السكرتارية وإدارة المكاتب
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="17"><input name="SelCategories" type="hidden" value="false">
-                     العلاقات العامة وخدمات العملاء
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="18"><input name="SelCategories" type="hidden" value="false">
-                     التسويق والمبيعات
-                  </li>
-               </ul>
+               منظومة التميز المؤسسي والايزو
+
+      
             </li>
             <li class="col-sm-3">
-               <input id="SelCategories" name="SelCategories" type="checkbox" value="2"><input name="SelCategories" type="hidden" value="false">
-               الأمن، الصحة والسلامة
-               <ul class="list-unstyled" style="padding: 5px 20px;">
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="19"><input name="SelCategories" type="hidden" value="false">
-                     الصحة والسلامة
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="20"><input name="SelCategories" type="hidden" value="false">
-                     الأمن
-                  </li>
-               </ul>
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               استشراف المستقبل و الذكاء الاصطناعي
+
+
+      
+            </li>
+
+
+
+            <li class="col-sm-3">
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               البرامج الأمنية العامة والمشتركة
+
+
+      
+            </li>
+
+            <li class="col-sm-3">
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               برامج ريادة الاعمال والتسويق
+
+
+      
+            </li>
+
+
+            <li class="col-sm-3">
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               المواهب البشرية والتدريب
+
+
+      
+            </li>
+
+            <li class="col-sm-3">
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               برامج صناعة القائد
+
+
+      
+            </li>
+
+            <li class="col-sm-3">
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               التطوير التربوي والذاتي
+
+
+      
+            </li>
+
+
+
+            <li class="col-sm-3">
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               المالية، البنوك و القانون
+
+
+      
+            </li>
+
+
+
+            <li class="col-sm-3">
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               إلاحصاء والتأمين 
+
+
+
+      
             </li>
             <li class="col-sm-3">
-               <input id="SelCategories" name="SelCategories" type="checkbox" value="3"><input name="SelCategories" type="hidden" value="false">
-               الفنية
-               <ul class="list-unstyled" style="padding: 5px 20px;">
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="4"><input name="SelCategories" type="hidden" value="false">
-                     الهندسة الكهربائية
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="5"><input name="SelCategories" type="hidden" value="false">
-                     الهندسة العامة
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="6"><input name="SelCategories" type="hidden" value="false">
-                     الهندسة الميكانيكية والمرافق الصناعية
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="7"><input name="SelCategories" type="hidden" value="false">
-                     هندسة البترول، الغاز، الكيمياويات والمعالجات
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="8"><input name="SelCategories" type="hidden" value="false">
-                     هندسة التوازن، الاستقرار، الصيانة والفحص
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="9"><input name="SelCategories" type="hidden" value="false">
-                     هندسة المعادن واللحام والتآكل
-                  </li>
-                  <li> <input id="SelCategories" name="SelCategories" type="checkbox" value="21"><input name="SelCategories" type="hidden" value="false">
-                     اللوجستية
-                  </li>
-               </ul>
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               الإعلام والعلاقات والتسويق
+
+
+
+      
+            </li>
+
+            <li class="col-sm-3">
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               الدورات الفنية التخصصية
+
+
+
+      
             </li>
             <li class="col-sm-3">
-               <input id="OtherCategories" name="chkOther" type="checkbox" value="true"> آخر
-               <div id="divOther" class="mt-15" style="display: none">
-                  <textarea class="form-control" cols="20" id="OtherCategories" name="OtherCategories" rows="2"></textarea>
-               </div>
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               السياحة والأثار
+
+
+
+      
+            </li>
+
+
+
+            <li class="col-sm-3">
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               البلديات والبيئة والعقارات
+
+
+
+
+      
+            </li>
+
+
+            <li class="col-sm-3">
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               الهندسة والسلامة والبترول
+
+
+
+
+      
+            </li>
+
+
+            <li class="col-sm-3">
+               <input id="SelCategories" name="SelCategories" type="checkbox" value="1"><input name="SelCategories" type="hidden" value="false">
+               الرياضة والجمعيات
+
+
+
+      
             </li>
          </ul>
       </div>
