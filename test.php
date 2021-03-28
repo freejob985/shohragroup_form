@@ -477,14 +477,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
                      <div class="col-sm-6">
                         <div class="form-group clearfix">
                            <label class="control-label col-sm-3">مدينة الاقامة <span class="red">*</span></label>
-                           <div class="input-group col-sm-9 ifrequiredcountry">
-                              <span class="input-group-addon">
-                              <i class="fa fa-building"></i>
-                              </span>
-                              <select class="form-control" id="TrainerCity" name="TrainerCity">
-                                 <option value="">اختر المدينة</option>
-                              </select>
-                           </div>
+                        
                            <div class="ifrequired ifrequired2 col-sm-9" style="margin-top: 2px;">
                               <div class="row">
                                  <div class="input-group">
