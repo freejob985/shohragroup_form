@@ -145,12 +145,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
                </div>
             </div>
             <form action="/ar/applyastrainer" class="form-horizontal" enctype="multipart/form-data" method="post" role="form" novalidate="novalidate">
-               <input name="__RequestVerificationToken" type="hidden" value="PfxBs8jyHbAxRg-ZPGYSHEl5dvl2N373UbXmY5G9d3a4dfzmvfRx2EJhmnSsi2yOtBbG0bp93geKGxbFreU-pQ54QG50pqV6bnVlNYtpiqY1">
-               <div class="validation-summary-valid alert alert-danger col-sm-offset-3 col-sm-6" data-valmsg-summary="true">
-                  <ul>
-                     <li style="display:none"></li>
-                  </ul>
-               </div>
+             
                <div class="col-sm-12 mb-25">
                   <div class="row">
                      <div class="col-sm-6">
