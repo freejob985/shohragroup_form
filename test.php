@@ -942,14 +942,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,input,span,label{   font-family: 'Tajawal', sans-seri
                   </div>
              
                </div>
-               <div class="form-group hidden">
-                  <div class="col-sm-6">
-                     <textarea class="form-control" cols="20" id="Description" name="Description" placeholder="اضغط لاستعراض عينة للمحة المختصرة" rows="2"></textarea>
-                  </div>
-                  <div class="col-sm-3 text-danger">
-                     <a class="showbio popupload" data-title="" data-body="انتونب روبنز، هو واحد من أكثر رجال التنمية البشرية نجاحا” في أمريكا، بل هو رجل التحفيز الأول ،حيث يتمتع بروح مرحة وأسلوب خطابي مقنع، ولعل سبب نجاحاته يعود إلى قصة كفاحه التي يرويها دائماً قبل أن يقرر أن يتغير، وعندها بدأ يستمع للأشرطة ويحضر المحاضرات حتى أصبح ما هو عليه"><small>اضغط لاستعراض عينة للمحة المختصرة</small></a>
-                  </div>
-               </div>
+             
                <div id="captcha-wraper" class="form-group">
                   <div class="col-sm-3 col-sm-offset-3">
                      <input type="submit" class="btn btn-primary btn-block" value="استمر">
